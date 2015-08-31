@@ -81,11 +81,11 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias raspi="ssh -p 5312 -vvv pi@jetfueldreams.duckdns.org"
-alias zshrc="st ~/.zshrc"
-alias awmrc="st /etc/xdg/awesome/rc.lua"
+alias zshrc="vim ~/.zshrc"
+alias awmrc="sudo vim /etc/xdg/awesome/rc.lua"
 alias runzshrc="source ~/.zshrc"
 alias batt="acpi -b"
-alias xinitrc="st ~/.xinitrc"
+alias xinitrc="vim ~/.xinitrc"
 
 screenfetch
 echo Welcome, Andrew

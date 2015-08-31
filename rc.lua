@@ -263,6 +263,8 @@ clientkeys = awful.util.table.join(
     awful.key({ modkey, "Shift"   }, "r",      function (c) c:redraw()                       end),
     awful.key({ modkey,           }, "t",      function (c) c.ontop = not c.ontop            end),
     awful.key({ modkey,           }, "n",
+    awful.key({ modkey, "Shift"   }, "F1",     function (C) awful.client.movetoscreen(c, 1) end),   
+    awful.key({ modkey, "Shift"   }, "F2",     function (C) awful.client.movetoscreen(c, 2) end),     
         function (c)
             -- The client currently has the input focus, so it cannot be
             -- minimized, since minimized clients can't have the focus.
